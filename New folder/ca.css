@@ -1,0 +1,371 @@
+body {font-family: "Times New Roman", Georgia, Serif; padding-top: 100px;}
+ h2, h3, h4, h5, h6 {
+  font-family:'Times New Roman', Times, serif;
+  letter-spacing: 0px;
+}
+h1 {font-size: 50px; font-family:'Times New Roman', Times, serif;
+  letter-spacing: 5px;font-size: xx-large; color: red;}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* RESPONSIVE CSS */
+img {
+    max-width: 100%;
+    height: auto;
+}
+section, .container {
+    padding: 15px;
+}
+.table-container {
+    overflow-x: auto;
+}
+/* Menu responsive */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav ul li {
+    margin: 10px;
+}    #toggleBtn {
+        padding: 10px 50px;
+        background: #007bff;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    /* Ảnh responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+@media (max-width: 768px) {
+  h1 { font-size: 28px !important; }
+  h2 { font-size: 22px !important; }
+  p, li { font-size: 14px !important; }
+  .chart-container { height: 200px; }
+  .menu-scroll {
+    overflow-x: auto;
+  }
+}
+   /* Ẩn checkbox */
+    #menu-toggle {
+      display: none;
+    }
+    /* Biểu tượng hamburger mặc định ẩn */
+    .menu-icon {
+      display: none;
+      font-size: 25px;
+      cursor: pointer;
+      user-select: none;
+      padding: 2px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      width: fit-content;
+      margin-bottom: 5px;
+    }
+    /* Menu mặc định hiện luôn */
+    .menu {
+      list-style: none;
+      padding-left: 0;
+      border: 1px solid #333;
+      background: #f8f8f8;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 0;
+    }
+summary {
+    background-color: rgb(0, 255, 255) !important; /* nền xanh */
+    border: 2px solid black !important;           /* viền đen 2px */
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    cursor: pointer !important;                              /* con trỏ khi hover */
+    transition: background-color 0.3s ease !important;       /* chuyển màu mượt */
+}
+/* Hover cho summary */
+.ccc:hover {
+    background-color: crimson !important;        /* nền đỏ khi hover */
+}
+/* Khi details mở, vẫn giữ nền xanh */
+details[open] summary {
+    background-color: rgb(0, 255, 255) !important;
+}
+/* Hover khi details mở */
+details[open] summary:hover {
+    background-color: crimson !important;
+}
+    .menu li {
+      padding: 10px 15px;
+      border-bottom: 1px solid #ddd;
+      display: none; /* Menu ngang trên desktop */
+    }
+a:visited {
+    color: purple; /* màu khác cho link đã click */
+}
+/* Hover để đẹp hơn */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+    .menu li:last-child {
+      border-bottom: none;
+    }
+    .menu li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+    .menu li a:hover {
+      background-color: #e0e0e0;
+    }
+    /* ----------- MEDIA QUERY cho điện thoại ----------- */
+    @media (max-width: 768px) {
+      /* Hiện biểu tượng hamburger */
+      .menu-icon {
+        display: inline-block;
+      }
+      /* Ẩn menu mặc định */
+      .menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        margin-top: 0;
+        border: 1px solid #333;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        background: #f8f8f8;
+        padding-left: 0;
+      }
+      /* Khi checkbox checked thì show menu */
+      #menu-toggle:checked + .menu-icon + .menu {
+        max-height: 1000px; /* Đủ cao để menu hiện */
+        margin-top: 5px;
+      }
+      /* Menu dọc trên điện thoại */
+      .menu li {
+        display: block;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+p {font-size: 20px;}
+.cam {background-color: rgb(255, 148, 42) ; !important}
+.bu {background-color: rgb(255, 145, 35) ; !important}
+.ca{background-color: rgb(255, 127, 0);!important}
+.ci {background-color: rgb(255, 97, 0);!important}
+.co {background-color: rgb(255, 66, 0);!important}
+.ce {background-color: rgb(255, 58, 0);!important}
+.o {background-color:rgb(255, 59, 0) ;!important}
+.p {background-color:  rgb(255, 64, 0);!important}
+.po {background-color: rgb(255, 70, 0);!important}
+.pu {background-color: rgb(255, 86, 0) ;!important}
+.pa {background-color: rgb(255, 109, 0) ;!important}
+.pe {background-color: rgb(255, 133, 12) ;!important}
+.pi {background-color: rgb(255, 97, 0) ;!important}
+.mot {background-color: rgb(255, 172, 89)}
+.hai {background-color: rgb(255, 166, 77)}
+.ba {background-color: rgb(255, 148, 41) ; !important}
+.bon {background-color:rgb(255, 120, 0)}
+.nam {background-color: rgb(255, 95, 0)}
+.saubay {background-color: rgb(255, 84, 0)}
+.tam {background-color: rgb(255, 87, 0);}
+.chin {background-color: rgb(255, 95, 0); !important}
+.muoi {background-color:rgb(255, 112, 0) ;}
+.muoimot {background-color: rgb(255, 137, 19) ;}
+.muoihai {background-color:rgb(255, 158, 62) ;}
+.muoiba {background-color:rgb(255, 121, 0) ;}
+.q {background-color: rgb(255, 195, 135);}
+.w {background-color:rgb(255, 186, 118) ;}
+.e {background-color: rgb(255, 168, 81);}
+.r {background-color: rgb(255, 144, 33);}
+.t {background-color:rgb(255, 122, 0) ;}
+.y {background-color:rgb(255, 116, 0) ;}
+.u {background-color:rgb(255, 110, 0) ;}
+.i {background-color:rgb(255, 119, 0) ;}
+.o {background-color: rgb(255, 138, 22);}
+.p {background-color: rgb(255, 164, 73);}
+.a {background-color: rgb(255, 183, 111);}
+.s {background-color: rgb(255, 146, 38);}
+.d {background-color:rgb(237, 255, 237) ;}
+.f {background-color:rgb(201, 255, 201) ;}
+.g {background-color:rgb(204, 255, 204) ;}
+.h {background-color: rgb(121, 255, 121);}
+.j {background-color: rgb(0, 195, 0);}
+.k {background-color: rgb(0, 132, 0);}
+.l {background-color:rgb(0, 48, 0) ; color: white;}
+.z {background-color:rgb(0, 149, 0) ;}
+.x {background-color: rgb(108, 255, 108);}
+.c {background-color:rrgb(202, 255, 202) ;}
+.v {background-color:rgb(220, 255, 220) ;}
+.b {background-color: rgb(42, 255, 42);}
+.n {background-color: rgb(168, 168, 255);}
+.m {background-color:rgb(160, 160, 255) ;}
+.qq {background-color:rgb(131, 131, 255) ;}
+.ww {background-color:rgb(140, 140, 255);}
+.ee {background-color: rgb(82, 82, 255);color: white;}
+.rr {background-color: rgb(63, 63, 255);color: white;}
+.tt {background-color: rgb(45, 45, 255);color: white;}
+.yy {background-color: rgb(32, 32, 255);color: white;}
+.uu {background-color:rgb(89, 89, 255) ;color: white;}
+.ii {background-color:rgb(143, 143, 255) ;}
+.oo {background-color: rgb(178, 178, 255);}
+.pp {background-color: rgb(193, 193, 255);}
+.aa {background-color: rgb(118, 118, 255);}
+.ss {background-color:rgb(0, 0, 238) ;color: white;}
+.dd {background-color: rgb(0, 0, 226);color: white}
+.ff {background-color:rgb(0, 0, 215) ;color: white}
+.gg {background-color:rgb(0, 0, 211) ;color: white}
+.hh {background-color:rgb(0, 0, 207) ;color: white}
+.jj {background-color: rgb(0, 0, 203);color: white}
+.kk {background-color: rgb(0, 0, 200);color: white}
+.ll {background-color: rgb(0, 0, 184);color: white}
+.zz {background-color: rgb(0, 0, 223);color: white}
+.xx {background-color: rgb(0, 0, 234);color: white}
+.cc {background-color:rgb(0, 0, 249) ;color: white}
+.vv {background-color:rgb(0, 0, 215) ;color: white}
+img {
+  transition: 1s;
+  cursor: pointer;
+}
+img:hover {
+  transform: rotate(0.4deg) scale(1.01);
+  filter: grayscale(0);
+}
+li {font-size: 20px;font-family: 'Times New Roman', Times, serif;}
+ .box {
+        width: 100%;
+        max-width: 100%;
+        height: 60px;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        font-size: 50px;
+        background-color: aqua;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+      }
+      .text {
+        position: absolute;
+        left: 100%;
+        animation: scroll 15s linear infinite;
+        align-items: center;
+        display: flex;
+      }
+      @keyframes scroll {
+        0% {
+          left: 100%;
+        }
+        100% {
+          left: -100%;
+        }
+      }
+        details {
+    margin-bottom: 10px;
+  }
+  summary {
+ cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+  }
+  summary:-webkit-details-marker {
+    display: none; /* Ẩn mũi tên mặc định */
+  }
+  summary:before {
+    content: "▶ "; /* Thêm ký hiệu tam giác trước tiêu đề */
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::before {
+    transform: rotate(90deg); /* Xoay tam giác khi mở */
+  }
+       
+       #quiz-box, #result-box {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 25px;
+        border-radius: 16px;
+        max-width: 80%;
+        margin: auto;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .answer {
+        padding: 12px;
+        margin: 10px 0;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.25s;
+        background: #fafafa;
+    }
+    .answer:hover {
+        background: #e9e9ff;
+        border-color: #6a5af9;
+    }
+    .correct {
+        background: #c8f7c5 !important;
+        border-color: #38c172 !important;
+        font-weight: bold;
+    }
+    .wrong {
+        background: #f7c5c5 !important;
+        border-color: #e3342f !important;
+    }
+    #timer {
+        font-size: 20px;
+        font-weight: bold;
+        color: #d9534f;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /* Kết quả cuối cùng */
+    #result-box {
+        display: none;
+        text-align: center;
+    }
+    #result-box h2 {
+        color: #6a5af9;
+    }
+    .result-item {
+        text-align: left;
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border-left: 5px solid #6a5af9;
+    }
+hr {height:2px; background-color:black; border:none; max-width: 100%;}
+h3 {font-size: x-large; font-family: 'Times New Roman', Times, serif;}
+.menu-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  flex: 1; /* Chiếm hết không gian giữa */
+}
+.menu-scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll-btn {
+  background: #ffffff;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.scroll-btn:hover {
+  background: #ddd;
+}
+.w3-bar-item {
+  flex: 0 0 auto; /* Không cho xuống dòng */
+}
